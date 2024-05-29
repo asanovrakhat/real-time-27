@@ -1,6 +1,4 @@
-Конечно, вот обновленный текст:
 
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,35 +9,271 @@
     <link rel="stylesheet" href="style.css">
     <title>Условия использования</title>
     <link rel="shortcut icon" href="/icons/icon.ico" type="image/x-icon">
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+        .reel{
+          margin-left: -80%;
+          position:absolute; 
+          font-size: 40px;
+          display: flex;
+          
+        }
+  
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+        }
+  
+        .navbar-left,
+        .navbar-right {
+            display: flex;
+        }
+  
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+  
+        .navbar a:hover {
+            background-color: #555;
+        }
+  
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+           
+        }
+  
+        .menu-icon div {
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin: 4px;
+            
+        }
+  
+        .search-container {
+            margin-top: 50px;
+        }
+  
+        .alwaysVisibleContent {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .h2{
+          display: none;
+        }
+  
+        .video {
+            margin-top: 20px;
+        }
+  
+        @media (max-width: 768px) {
+          .reel{
+            position: relative;
+            margin-right: -30%;
+            margin-bottom: -30px;
+          }
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+  
+            .navbar-left,
+            .navbar-right {
+                flex-direction: column;
+                width: 100%;
+                display: none;
+            }
+  
+            .navbar a {
+                margin: 5px 0;
+            }
+  
+            .menu-icon  {
+                display: flex;
+            }
+  
+            .search-container {
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 10%;
+               
+                position: relative;
+            }
+  
+            .search-container input {
+                width: 80%;
+            }
+        }
+  
+        @media (max-width: 480px) {
+          .reel{ 
+            position: sticky;
+            width: 10%;
+     
+            
+           }
+            .navbar {
+                padding: 10px;
+            }
+  
+            .navbar-left,
+            .navbar-right {
+                align-items: center;
+            }
+            .search-container {
+              width: 10%;
+             
+            }
+            
+              
+            }
+           
+  
+            .search-container input {
+                width: 50%;
+                
+            }
+            
+    </style>
 </head>
 
 <body>
+    <div class="reel">
+        <h2>Reel Time</h2>
+      </div>
+     
+        <div class="navbar">
+          
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="navbar-left">
+                <a href="./privacy-policy.html" target="_blank">Политика конфиденциальности</a>
+                <a href="./terms-and-conditions.html" target="_blank">Условия использования</a>
+            </div>
+            <div class="navbar-right">
+                <a href="./contact.html" target="_blank">Контакт</a>
+                <a id="login-link" href="./login.html" target="_blank">Войти</a>
+            </div>
+        </div>
 
-    <div class="information">
-        <div class="pagelinks">
-            <a href="./privacy-policy.html" target="_blank">Политика конфиденциальности</a>
-            <a href="./terms-and-conditions.html" target="_blank">Условия использования</a>
-            <a href="./contact.html" target="_blank">Контакты</a>
+   
+        <div class="information">
+            <h2><strong>Условия использования</strong></h2>
+
+            <p>Добро пожаловать на уникальный веб-сайт Reel Time</p>
+            
+            
+            <p>Пользуясь этим веб-сайтом, мы предполагаем, что вы принимаете эти условия и положения. 
+            
+            <h3><strong>Куки</strong></h3>
+            
+            <p>Мы используем файлы куки. Продолжая использовать Reel Time, вы соглашаетесь с использованием файлов куки в соответствии с Политикой конфиденциальности Reel Time .</p>
+            
+            <p>Большинство интерактивных веб-сайтов используют файлы куки, чтобы мы могли получать данные пользователя для каждого визита. Файлы куки используются нашим веб-сайтом для включения функциональности определенных областей, чтобы облегчить посещение нашего веб-сайта. </p>
+            
+           
+            
+           
+
         </div>
         
-        <h2><strong>Условия использования</strong></h2>
-
-        <p>Добро пожаловать на уникальный веб-сайт NETFLIX</p>
-        
-        
-        <p>Пользуясь этим веб-сайтом, мы предполагаем, что вы принимаете эти условия и положения. 
-        
-        <h3><strong>Куки</strong></h3>
-        
-        <p>Мы используем файлы куки. Продолжая использовать NETFLIX, вы соглашаетесь с использованием файлов куки в соответствии с Политикой конфиденциальности NETFLIX .</p>
-        
-        <p>Большинство интерактивных веб-сайтов используют файлы куки, чтобы мы могли получать данные пользователя для каждого визита. Файлы куки используются нашим веб-сайтом для включения функциональности определенных областей, чтобы облегчить посещение нашего веб-сайта. </p>
-        
-       
-        
-       
       
     </div>
+    <script>
+        
+      // Function to update the login link based on the login status
+      function updateLoginLink() {
+          const username = localStorage.getItem('username');
+          const loginLink = document.getElementById('login-link');
+
+          if (username) {
+              loginLink.textContent = `Привет, ${username}`;
+              loginLink.href = ''; // Clear the href attribute
+          } else {
+              loginLink.textContent = 'Войти';
+              loginLink.href = './login.html'; // Set the href attribute to login.html
+          }
+      }
+
+      // Update the login link when the page is loaded
+      window.onload = updateLoginLink;
+
+      // Clear the username from localStorage on project restart
+      window.addEventListener('beforeunload', function () {
+          localStorage.removeItem('username');
+      });
+
+      // Add event listener to the registration form submit event
+      document.getElementById('registrationForm').addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const username = document.getElementById('username').value;
+          const email = document.getElementById('email').value;
+          const password = document.getElementById('password').value;
+          const confirmPassword = document.getElementById('confirm_password').value;
+
+          if (password !== confirmPassword) {
+              alert('Пароли не совпадают.');
+              return;
+          }
+
+          // Retrieve existing users from localStorage
+          let users = JSON.parse(localStorage.getItem('users')) || [];
+
+          // Check if username already exists
+          if (users.some(user => user.username === username)) {
+              alert('Имя пользователя уже существует.');
+              return;
+          }
+
+          // Add the new user to the list
+          users.push({ username, email, password });
+          localStorage.setItem('users', JSON.stringify(users));
+
+          // Store the username in localStorage
+          localStorage.setItem('username', username);
+
+          // Redirect to index.html
+          window.location.href = 'index.html';
+      });
+
+      // Function to toggle the menu display
+      function toggleMenu() {
+          const navbarLeft = document.querySelector('.navbar-left');
+          const navbarRight = document.querySelector('.navbar-right');
+          navbarLeft.style.display = navbarLeft.style.display === 'flex' ? 'none' : 'flex';
+          navbarRight.style.display = navbarRight.style.display === 'flex' ? 'none' : 'flex';
+      }
+
+      // Initially open the menu on media devices
+      if (window.matchMedia('(max-width: 768px)').matches) {
+          const navbarLeft = document.querySelector('.navbar-left');
+          const navbarRight = document.querySelector('.navbar-right');
+          navbarLeft.style.display = 'flex';
+          navbarRight.style.display = 'flex';
+      }
+  </script>
+   
 </body>
 
 </html>
